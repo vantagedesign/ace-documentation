@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+
+        {{- partial "header.html" . -}}
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right">
+                    {{- partial "menu.html" . -}}
+                </div>
+
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left">
+                    {{- partial "tableofcontents.html" . -}}
+                </div>
+
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                    {{- block "main" . }}{{- end }}                            
+                    
+                    <div class="position-relative w-75 m-auto">
+                      {{ partial "next-prev-page.html" . }}
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        {{- partial "footer.html" . -}}
+
+    </body>
+</html>
