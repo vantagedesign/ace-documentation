@@ -1,0 +1,22 @@
+<head>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <title>
+        {{ block "title" . }}
+        {{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
+        {{ end }}
+    </title>
+
+    <!-- Load stylesheet -->
+    <link href="{{ .Site.BaseURL }}css/fontawesome.min.css" rel="stylesheet">
+
+    {{ $style := resources.Get "css/ace.scss" | toCSS (dict "targetPath" "css/ace.css" "enableSourceMap" false) }}
+    <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
+
+    {{ template "_internal/google_analytics_async.html" . }}
+
+</head>

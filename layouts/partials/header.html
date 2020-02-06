@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand navbar-dark bg-primary shadow sticky-top">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
+                {{ .Site.Title }}
+            </a>
+        </div>
+        <ul class="navbar-nav ml-auto">
+            {{- with .Site.Menus.shortcuts}}
+                  {{- range sort . "Weight"}}
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{.URL}}" {{if eq $.Site.Params.menushortcutsnewtab true}}target="_blank"{{end}}>
+                            {{safeHTML .Name}}
+                          </a>
+                      </li>
+                  {{- end}}
+            {{- end}}
+        </ul>
+    </div>
+</nav>
