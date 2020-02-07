@@ -10,6 +10,7 @@ Installing Ace is easy. Just install the Hugo binary, create a new site and inst
 
 ## Installing Hugo
 In order to run this theme, you need to install Hugo on your system.
+This theme requires Hugo's extended version to support SCSS compilation, so make please sure you install the extended version.
 For more detailed information and other methods of installation you can visit the <a href="https://gohugo.io/getting-started/installing/" target="_blank">Hugo installation guide.</a>   
 
 There may be other ways to install Hugo that are more applicable for your project. For example, you can use the NPM package <a href="https://www.npmjs.com/package/hugo-bin" target="_blank">hugo-bin</a> to include Hugo in a project that already uses NPM packages.
@@ -19,6 +20,7 @@ Run the following command in your terminal to check if Hugo is installed.
 {{< code lang="bash" >}}
 hugo version
 {{< /code >}}
+Make sure the version name mentions <i>extended</i>, to indicate you've installed the extended version of Hugo, which is required for this theme.
 
 ## Creating a site
 Create a new site *docs* (you may choose any name you want). In your projects root folder, run the following command:
