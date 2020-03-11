@@ -38,7 +38,7 @@ The documentation for Ace was, of course, built with Ace. Therefore, the documen
 - [Demo](https://docs.vantage-design.com/ace)
 - [Documentation](https://docs.vantage-design.com/ace)
 - [Issues](https://github.com/vantagedesign/ace-documentation/issues)
-- [License](https://github.com/vantagedesign/ace-documentation/glob/master/LICENSE)
+- [License](https://github.com/vantagedesign/ace-documentation/blob/master/LICENSE)
 
 
 ## Reporting Issues
