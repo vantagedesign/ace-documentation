@@ -19,14 +19,19 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                     {{- block "main" . }}{{- end }}                            
                     
-                    <div class="position-relative w-75 m-auto">
-                      {{ partial "next-prev-page.html" . }}
-                    </div>
+                    <div class="row">
+                        
+                        <div class="position-relative mx-auto col-lg-9">
+                          {{ partial "next-prev-page.html" . }}
+                        </div>
+
+                    </div> <!-- /end of row -->
 
                 </div>
 
-            </div>
-        </div>
+            </div> <!-- /end of row -->
+
+        </div> <!-- /end of container -->
 
         {{- partial "footer.html" . -}}
 
