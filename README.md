@@ -38,7 +38,7 @@ The documentation for Ace was, of course, built with Ace. Therefore, the documen
 - [Demo](https://docs.vantage-design.com/ace)
 - [Documentation](https://docs.vantage-design.com/ace)
 - [Issues](https://github.com/vantagedesign/ace-documentation/issues)
-- [License](https://github.com/vantagedesign/ace-documentation/blob/master/LICENSE)
+- [License](https://github.com/vantagedesign/ace-documentation/blob/master/LICENSE.md)
 
 
 ## Reporting Issues
@@ -53,7 +53,7 @@ We use GitHub Issues as the official bug tracker for the Ace documentation. When
 ## Licensing
 
 - Copyright 2020 [Vantage Design](https://vantage-design.com)
-- Licensed under MIT (https://github.com/vantagedesign/ace-documentation/glob/master/LICENSE)
+- Licensed under MIT (https://github.com/vantagedesign/ace-documentation/glob/master/LICENSE.md)
 
 ## Useful links
 
