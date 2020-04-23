@@ -53,7 +53,7 @@ We use GitHub Issues as the official bug tracker for the Ace documentation. When
 ## Licensing
 
 - Copyright 2020 [Vantage Design](https://vantage-design.com)
-- Licensed under MIT (https://github.com/vantagedesign/ace-documentation/glob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/vantagedesign/ace-documentation/blob/master/LICENSE.md)
 
 ## Useful links
 
