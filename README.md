@@ -1,6 +1,6 @@
 # [Ace documentation](https://docs.vantage-design.com/ace)
 
-![Product thumbnail](https://github.com/vantagedesign/assets/blob/master/ace-documentation/ace-thumbnail-shadow.png)
+![Product thumbnail](https://raw.githubusercontent.com/vantagedesign/assets/master/ace-documentation/ace-thumbnail-shadow.png)
 
 Create beautiful documentation for your projects with Ace for Hugo. Powered by Bootstrap and SASS, featuring must-have features such as syntax highlighting, copy-able code blocks, full search, a responsive layout and the power of Markdown to create your content. 
 
