@@ -12,12 +12,16 @@
                     {{- partial "menu.html" . -}}
                 </div>
 
+                {{- if and (ne .Site.Params.toc false) (ne .Params.toc false) }}
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left">
                     {{- partial "tableofcontents.html" . -}}
                 </div>
-
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
-                    {{- block "main" . }}{{- end }}                            
+                {{else}}
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3">
+                {{end}}
+
+                    {{- block "main" . }}{{- end }}
                     
                     <div class="row">
                         
