@@ -1,10 +1,10 @@
 ## Version 1.0.3
- - [FIX] Remove source map imports from JS files (@jhollowe)
- - [FIX] Fix minifier error with spacing in next-prev-page (@jhollowe)
- - [ADD] Allow disabling the TOC (@jhollowe)
- - [ADD] Allow Google Analytics to only track production site (@jhollowe)
- - [FIX] Prevent empty heaver toggler (@jhollowe)
- - [ADD] New table shortcode for styled tables (fixes issue #2)
+ - [FIX] Remove source map imports from JS files ([@jhollowe, PR #8](https://github.com/vantagedesign/ace-documentation/pull/8))
+ - [FIX] Fix minifier error with spacing in next-prev-page ([@jhollowe, PR #6](https://github.com/vantagedesign/ace-documentation/pull/6))
+ - [ADD] Allow disabling the TOC ([@jhollowe, PR #9](https://github.com/vantagedesign/ace-documentation/pull/9)
+ - [ADD] Allow Google Analytics to only track production site ([@jhollowe, PR #7](https://github.com/vantagedesign/ace-documentation/pull/7))
+ - [FIX] Prevent empty heaver toggler ([@jhollowe, PR #3](https://github.com/vantagedesign/ace-documentation/pull/3))
+ - [ADD] New table shortcode for styled tables (fixes [issue #2](https://github.com/vantagedesign/ace-documentation/issues/2))
  - [FIX] Typo in readme
 
 
