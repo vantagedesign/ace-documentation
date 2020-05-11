@@ -19,8 +19,9 @@ With a minimal design, the attention of users is focused on that which matters: 
 
 
 ## Demo & documentation
-The documentation for Ace was, of course, built with Ace. Therefore, the documentation for Ace also serves as a demo.   
-[Ace demo & documentation](https://docs.vantage-design.com/ace)
+The documentation for Ace was, of course, built with Ace. Therefore, the documentation for Ace also serves as a demo. 
+
+ - [Ace demo & documentation](https://docs.vantage-design.com/ace)
 
 
 
