@@ -17,7 +17,7 @@ googleAnalytics = ""
 [params]
 ordersectionsby = "weight" # ordersectionsby = "title"
 disableSearch = false # default is false
-disableNavChevron = false # set true to hide next/prev chevron, default is false
+disableReadmoreNav = false # set true to hide prev/next navigation, default is false
 highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
 menushortcutsnewtab = true # set true to open shortcuts links to a new tab/window
 
@@ -37,5 +37,9 @@ weight = 1
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i>"
 url = "https://github.com/vantagedesign/ace-documentation"
-weight = 10
+weight = 2
 
+[[menu.shortcuts]]
+name = "<button class='btn btn-success mt-n1'>Download</button>"
+url = "https://github.com/vantagedesign/ace-documentation/releases"
+weight = 3
