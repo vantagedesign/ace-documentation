@@ -19,8 +19,9 @@ With a minimal design, the attention of users is focused on that which matters: 
 
 
 ## Demo & documentation
-The documentation for Ace was, of course, built with Ace. Therefore, the documentation for Ace also serves as a demo.
-[Ace demo & documentation](https://docs.vantage-design.com/ace)
+The documentation for Ace was, of course, built with Ace. Therefore, the documentation for Ace also serves as a demo. 
+
+ - [Ace demo & documentation](https://docs.vantage-design.com/ace)
 
 
 
@@ -32,6 +33,7 @@ The documentation for Ace was, of course, built with Ace. Therefore, the documen
 *Note:* this theme only works with Hugo's extended version, due to the SCSS compile functionality. 
 
 
+
 ## Resources
 
 - [Store page](https://vantage-design.com/products/documentation-themes/4/ace-documentation)
@@ -39,6 +41,7 @@ The documentation for Ace was, of course, built with Ace. Therefore, the documen
 - [Documentation](https://docs.vantage-design.com/ace)
 - [Issues](https://github.com/vantagedesign/ace-documentation/issues)
 - [License](https://github.com/vantagedesign/ace-documentation/blob/master/LICENSE.md)
+
 
 
 ## Reporting Issues
@@ -50,10 +53,21 @@ We use GitHub Issues as the official bug tracker for the Ace documentation. When
 3. Specify your browser and version of Ace.
 
 
+
+## Contributing to Ace
+
+Contributions are highly appreciated and may be done by reporting issues with new feature suggestions or bug fixes, or by making pull requests. We'll try our best to get those sorted as soon as possible. 
+
+Please make pull requests to the [dev branch](https://github.com/vantagedesign/ace-documentation/tree/dev). Make sure you're always running the latest version of Ace and that you are not commiting breaking changes.
+
+
+
 ## Licensing
 
 - Copyright 2020 [Vantage Design](https://vantage-design.com)
 - Licensed under MIT (https://github.com/vantagedesign/ace-documentation/blob/master/LICENSE.md)
+
+
 
 ## Useful links
 
