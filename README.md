@@ -29,7 +29,7 @@ The documentation for Ace was, of course, built with Ace. Therefore, the documen
 - [Download from GitHub](https://github.com/vantagedesign/ace-documentation/releases)
 - Clone the repo `git clone https://github.com/vantagedesign/ace-documentation.git`
 
-*Note:* this theem only works with Hugo's extended version, due to the SCSS compile functionality. 
+*Note:* this theme only works with Hugo's extended version, due to the SCSS compile functionality. 
 
 
 ## Resources
