@@ -1,3 +1,6 @@
+## Version 1.0.4
+ - Updated Bootstrap to v4.5
+
 ## Version 1.0.3
  - [FIX] Typo in readme, added changelog, updated config.toml in exampleSite
  - [FIX] Remove source map imports from JS files ([@jhollowe, PR #8](https://github.com/vantagedesign/ace-documentation/pull/8))
