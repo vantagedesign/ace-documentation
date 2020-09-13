@@ -45,7 +45,7 @@ Where <code>XX-XXXXXXXXX-X</code> is your tracking ID.
 
 ## Read more navigation
 
-In <code>config.toml</code> or a page's <code>frontmatter</code>, set <code>disableReadmoreNav = true</code> to disable the prev/next buttons at the buttom of every page.
+In <code>config.toml</code> or a page's <code>frontmatter</code>, set <code>disableReadmoreNav = true</code> to disable the prev/next buttons at the bottom of every page.
 
 
 ## Search

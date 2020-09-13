@@ -28,5 +28,5 @@ The style parameter is directly applied to the alert as a class in the format *"
 Example: <code>style="danger"</code>.
 
 #### Title
-The title paramter defines the text shown as a title in the panel. It will have the same color as the style.   
+The title parameter defines the text shown as a title in the panel. It will have the same color as the style.   
 Example: <code>title="I'm important"</code>.

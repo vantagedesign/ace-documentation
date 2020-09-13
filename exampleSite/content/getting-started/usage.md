@@ -32,7 +32,7 @@ hugo
 Pages are written in Markdown and files defining pages should end with *.md*. For more information on how to use Markdown, search for tutorials on the internet or use this <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">cheatsheet</a>.
 
 ### File structure
-Ace looks at your file stucture and automatically turns it into a menu.
+Ace looks at your file structure and automatically turns it into a menu.
 The structure looks as follows:
 {{< code >}}
 /content
@@ -69,8 +69,8 @@ weight = 2
 +++
 {{< /code >}}   
 The title will be displayed as a H1 header at the top of your page. The weight determines the order in the menu.   
-   
-After that you may write the content you desire with Markdown. You may use shortcodes to add some more 'advanced' layout features to the page, such as code hightlighting, a 'lead' style paragraph, images, video's, and more. 
+
+After that you may write the content you desire with Markdown. You may use shortcodes to add some more 'advanced' layout features to the page, such as code highlighting, a 'lead' style paragraph, images, video's, and more.
 
 ### Navigation bar menu
 While the left sidebar navigation is automatically populated by the file structure described above, and the right 'table of contents' sidebar menu is automatically populated by the headings defined on a page, the top navigation bar needs to be configured manually.
