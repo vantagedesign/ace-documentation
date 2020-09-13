@@ -50,4 +50,7 @@ In <code>config.toml</code> or a page's <code>frontmatter</code>, set <code>disa
 
 ## Search
 
-Disable search by setting <code>disableSearch = true</code> in <code>config.toml</code>. 
+Disable search by setting <code>disableSearch = true</code> in <code>config.toml</code>.
+
+The local search feature is based on the content of `index.json`, which is generated based on a configurable template.
+Search results are presented as a drop-down list attached to the search input field while typing.
