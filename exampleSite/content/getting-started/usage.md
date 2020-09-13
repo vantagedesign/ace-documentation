@@ -53,10 +53,10 @@ The structure looks as follows:
             └── /level-four
                 ├── page-4-one.md
                 └── page-4-two.md
-{{< /code >}}   
+{{< /code >}}
 
-Your 'homepage' for every level is the <code>_index.md</code> file. Subpages (like <code>page-1-one.md</code>) are automatically added as child pages in the menu.   
-   
+Your 'homepage' for every level is the <code>_index.md</code> file. Subpages (like <code>page-1-one.md</code>) are automatically added as child pages in the menu.
+
 An exception exists for the top level files. <code>/content/_index.md</code> is your homepage, and any other page files in the <code>/content</code> folder are not automatically added in the menu. Instead, they can be accessed manually through their URL (<code>yourdomain.com/page-title</code>).
 
 ### File contents
@@ -67,8 +67,8 @@ title = "Usage"
 description = ""
 weight = 2
 +++
-{{< /code >}}   
-The title will be displayed as a H1 header at the top of your page. The weight determines the order in the menu.   
+{{< /code >}}
+The title will be displayed as a H1 header at the top of your page. The weight determines the order in the menu.
 
 After that you may write the content you desire with Markdown. You may use shortcodes to add some more 'advanced' layout features to the page, such as code highlighting, a 'lead' style paragraph, images, video's, and more.
 

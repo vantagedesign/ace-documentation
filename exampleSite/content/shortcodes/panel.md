@@ -18,15 +18,15 @@ Simply place the following shortcode on the page
 
 ### Parameters
 #### Style
-The style parameter is directly applied to the alert as a class in the format *"border-{STYLE}"*. Bootstrap comes with a variety of styles that can be used with this:  
-- primary  
-- secondary      
-- danger   
-- warning   
-- success   
-- info    
+The style parameter is directly applied to the alert as a class in the format *"border-{STYLE}"*. Bootstrap comes with a variety of styles that can be used with this:
+- primary
+- secondary
+- danger
+- warning
+- success
+- info
 Example: <code>style="danger"</code>.
 
 #### Title
-The title parameter defines the text shown as a title in the panel. It will have the same color as the style.   
+The title parameter defines the text shown as a title in the panel. It will have the same color as the style.
 Example: <code>title="I'm important"</code>.

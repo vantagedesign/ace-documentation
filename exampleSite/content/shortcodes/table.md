@@ -15,7 +15,7 @@ The table shortcode allows you to wrap your tables in a <code>table</code> class
 
 ## Usage
 Place the following shortcode on the page
-{{< code lang="html" >}} 
+{{< code lang="html" >}}
 {{</* table style="STYLE" */>}}
 | Tables        | are           | cool  |
 | ------------- |:-------------:| -----:|
@@ -27,8 +27,8 @@ Place the following shortcode on the page
 
 ### Parameters
 #### Style
-The style parameter is directly applied to the table as a class in the format *"{STYLE}"*. Bootstrap comes with several styles that can be used with this:   
-- table-striped    
-- table-dark   
-- table-bordered    
-- table-hover    
+The style parameter is directly applied to the table as a class in the format *"{STYLE}"*. Bootstrap comes with several styles that can be used with this:
+- table-striped
+- table-dark
+- table-bordered
+- table-hover
