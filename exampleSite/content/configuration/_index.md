@@ -24,6 +24,16 @@ toc = false
 
 in the <code>config.toml</code> or the <code>frontmatter</code> (a page's markdown file) for a page-wide or page-specific disabling of the ToC respectively.
 
+
+## Logo
+
+An optional site logo can be specified:
+
+{{< code >}}
+logo = /logo.svg
+{{< /code >}}
+
+
 ## Google Analytics
 
 Enable Google Analytics by adding your GA tracking ID to the <code>config.toml</code> file, at:
