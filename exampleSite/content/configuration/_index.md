@@ -24,6 +24,16 @@ toc = false
 
 in the <code>config.toml</code> or the <code>frontmatter</code> (a page's markdown file) for a page-wide or page-specific disabling of the ToC respectively.
 
+
+## Logo
+
+An optional site logo can be specified:
+
+{{< code >}}
+logo = /logo.svg
+{{< /code >}}
+
+
 ## Google Analytics
 
 Enable Google Analytics by adding your GA tracking ID to the <code>config.toml</code> file, at:
@@ -35,9 +45,12 @@ Where <code>XX-XXXXXXXXX-X</code> is your tracking ID.
 
 ## Read more navigation
 
-In <code>config.toml</code> or a page's <code>frontmatter</code>, set <code>disableReadmoreNav = true</code> to disable the prev/next buttons at the buttom of every page.
+In <code>config.toml</code> or a page's <code>frontmatter</code>, set <code>disableReadmoreNav = true</code> to disable the prev/next buttons at the bottom of every page.
 
 
 ## Search
 
-Disable search by setting <code>disableSearch = true</code> in <code>config.toml</code>. 
+Disable search by setting <code>disableSearch = true</code> in <code>config.toml</code>.
+
+The local search feature is based on the content of `index.json`, which is generated based on a configurable template.
+Search results are presented as a drop-down list attached to the search input field while typing.

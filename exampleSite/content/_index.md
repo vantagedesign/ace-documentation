@@ -92,7 +92,7 @@ Ace is a theme for <a href="https://gohugo.io" target="_blank">Hugo</a>, a fast 
 			</div>
 			<div class="card-body pl-2">
 				<h5 class="card-title">
-					Code hightlighting.
+					Code highlighting.
 				</h5>
 				<p class="card-text text-muted">
 					Code highlighting. Include code samples with a copy button. If it’s HTML, you can also render the code.

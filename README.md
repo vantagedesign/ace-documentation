@@ -58,7 +58,7 @@ We use GitHub Issues as the official bug tracker for the Ace documentation. When
 
 Contributions are highly appreciated and may be done by reporting issues with new feature suggestions or bug fixes, or by making pull requests. We'll try our best to get those sorted as soon as possible. 
 
-Please make pull requests to the [dev branch](https://github.com/vantagedesign/ace-documentation/tree/dev). Make sure you're always running the latest version of Ace and that you are not commiting breaking changes.
+Please make pull requests to the [dev branch](https://github.com/vantagedesign/ace-documentation/tree/dev). Make sure you're always running the latest version of Ace and that you are not committing breaking changes.
 
 
 
@@ -74,7 +74,7 @@ Please make pull requests to the [dev branch](https://github.com/vantagedesign/a
 - [More products](https://vantage-design.com)
 - [Free products](https://vantage-design.com/products/free-products/)
 - [Premium products](https://vantage-design.com/products/premium-products/)
-- [Design sytems](https://vantage-design.com/products/design-systems/)
+- [Design systems](https://vantage-design.com/products/design-systems/)
 - [Page templates](https://vantage-design.com/products/page-templates/)
 - [Documentation themes](https://vantage-design.com/products/documentation-themes/)
 

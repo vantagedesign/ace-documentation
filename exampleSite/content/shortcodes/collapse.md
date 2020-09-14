@@ -19,5 +19,5 @@ Simply place the following shortcode on the page
 
 ### Parameters
 #### *title*
-The lang parameter defines the text to show in the button that toggles the collapse content.  
+The lang parameter defines the text to show in the button that toggles the collapse content.
 Example: <code>title="Click me to show content"</code>.
