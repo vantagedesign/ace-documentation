@@ -3,9 +3,9 @@
 {{- if and $index (gt $index 0) -}},{{- end }}
 {
 	"uri": "{{ $page.Permalink }}",
-	"title": "{{ htmlEscape $page.Title}}",
-	"tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag| htmlEscape }}"{{ end }}],
-	"description": "{{ htmlEscape .Description}}",
+	"title": {{ $page.Title | jsonify }},
+	"tags": {{ $page.Params.tags | jsonify }},
+	"description": {{ .Description | jsonify }},
 	"content": {{$page.Plain | jsonify}}
 }
 {{- end -}}
