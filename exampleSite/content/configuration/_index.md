@@ -30,7 +30,7 @@ in the <code>config.toml</code> or the <code>frontmatter</code> (a page's markdo
 An optional site logo can be specified:
 
 {{< code >}}
-logo = /logo.svg
+site_logo = /logo.svg
 {{< /code >}}
 
 
