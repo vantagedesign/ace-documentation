@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    <body>
+{{- partial "head.html" . -}}
 
-        {{- partial "header.html" . -}}
+<body>
 
-        <div class="container-fluid">
-            <div class="row">
+    {{- partial "header.html" . -}}
 
-                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right">
-                    {{- partial "menu.html" . -}}
-                </div>
+    <div class="container-fluid p-3">
+        <div class="row">
 
-                {{- if and (ne .Site.Params.toc false) (ne .Params.toc false) }}
-                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left">
-                    {{- partial "tableofcontents.html" . -}}
-                </div>
-                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+            <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky p-2 border-right">
+                {{- partial "menu.html" . -}}
+            </div>
+
+            {{- if and (ne .Site.Params.toc false) (ne .Params.toc false) }}
+            <div
+                class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left">
+                {{- partial "tableofcontents.html" . -}}
+            </div>
+            <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8">
                 {{else}}
-                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3">
-                {{end}}
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 ">
+                    {{end}}
 
                     {{- block "main" . }}{{- end }}
-                    
+
                     <div class="row">
                         {{- if and (ne .Site.Params.disableReadmoreNav true) (ne .Params.disableReadmoreNav true) -}}
                         <div class="position-relative mx-auto col-lg-9">
-                          {{ partial "next-prev-page.html" . }}
+                            {{ partial "next-prev-page.html" . }}
                         </div>
                         {{- end -}}
                     </div> <!-- /end of row -->
@@ -38,6 +40,8 @@
         </div> <!-- /end of container -->
 
         {{- partial "footer.html" . -}}
+    </div>
 
-    </body>
+</body>
+
 </html>
