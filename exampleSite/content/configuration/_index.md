@@ -54,3 +54,15 @@ Disable search by setting <code>disableSearch = true</code> in <code>config.toml
 
 The local search feature is based on the content of `index.json`, which is generated based on a configurable template.
 Search results are presented as a drop-down list attached to the search input field while typing.
+
+
+## Custom CSS
+
+You can override the built-in css by using your own. Just put your own css files in the `static` directory of your website (the one in the theme directory also works but is not recommended) and modify the `custom_css` parameter in your config file. The path referenced in the parameter should be relative to the `static` folder. These css files will be added through the `header` partial after the built-in css file.
+
+For example, if your css files are `static/css/custom.css` and `static/css/custom2.css` then add the following to the config file:
+
+```
+    [params]
+      custom_css = ["css/custom.css","css/custom2.css"]
+```

@@ -17,6 +17,10 @@
     {{ $style := resources.Get "css/ace.scss" | toCSS | minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
+    {{ range .Site.Params.custom_css }}
+      <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ end }}
+
     <!-- Only include the tracking when using `hugo` or adding `--environment production` -->
     {{ if eq hugo.Environment "production" }}
         {{ template "_internal/google_analytics_async.html" . }}
