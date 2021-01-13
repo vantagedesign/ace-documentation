@@ -17,6 +17,9 @@
     {{ $style := resources.Get "css/ace.scss" | toCSS | minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
+    {{ "<!--Favicon-->" | safeHTML }}
+    <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+
     <!-- Only include the tracking when using `hugo` or adding `--environment production` -->
     {{ if eq hugo.Environment "production" }}
         {{ template "_internal/google_analytics_async.html" . }}
