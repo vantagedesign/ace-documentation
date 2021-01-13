@@ -32,6 +32,21 @@ The documentation for Ace was, of course, built with Ace. Therefore, the documen
 
 *Note:* this theme only works with Hugo's extended version, due to the SCSS compile functionality. 
 
+### Configuration
+
+Color Scheme can be overriden in config.toml by setting the following variables
+```
+[params]
+primary_color
+secondary_color
+success_color
+info_color
+warning_color
+danger_color
+light_color
+dark_color
+```
+
 
 
 ## Resources

@@ -14,7 +14,7 @@
     <!-- Load stylesheet -->
     <link href="{{ .Site.BaseURL }}css/fontawesome.min.css" rel="stylesheet">
 
-    {{ $style := resources.Get "css/ace.scss" | toCSS | minify }}
+    {{ $style := resources.Get "css/ace.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     <!-- Only include the tracking when using `hugo` or adding `--environment production` -->

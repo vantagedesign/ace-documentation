@@ -6,14 +6,14 @@
 *   @license https://github.com/vantagedesign/ace-documentation/blob/master/LICENSE
 * ------------------------------------------------------------------------ */
 
-$primary:       #007bff;
-$secondary:     #6610f2;
-$success:       #28a745;
-$info:          #17a2b8;
-$warning:       #ffc107;
-$danger:        #dc3545;
-$light:         #f8f9fa;
-$dark:          #343a40;
+$primary:       {{ .Site.Params.primary_color | default "#007bff" }} !default;
+$secondary:     {{ .Site.Params.secondary_color | default "#6610f2" }} !default;
+$success:       {{ .Site.Params.success_color | default "#28a745" }} !default;
+$info:          {{ .Site.Params.info_color | default "#17a2b8" }} !default;
+$warning:       {{ .Site.Params.warning_color | default "#ffc107" }} !default;
+$danger:        {{ .Site.Params.danger_color | default "#dc3545" }} !default;
+$light:         {{ .Site.Params.light_color | default "#f8f9fa" }} !default;
+$dark:          {{ .Site.Params.dark_color | default "#343a40" }} !default;
 
 @import "bootstrap/bootstrap";
 
