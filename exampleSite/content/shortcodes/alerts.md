@@ -19,7 +19,7 @@ Place the following shortcode on the page
 
 ### Parameters
 #### Style
-The style parameter is directly applied to the alert as a class in the format *"alert-{STYLE}"*. Bootstrap comes with four styles that can be used with this:
+The style parameter is directly applied to the alert as a class in the format *"{STYLE}"*. Bootstrap comes with four styles that can be used with this:
 - danger
 - warning
 - success
