@@ -31,7 +31,7 @@
     </div>
     {{ with .OutputFormats.Get "rss" -}}
         <div class="feed-icons">
-            <a href=".Permalink"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
+            <a href="{{ .Permalink }}"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
         </div>
     {{ end -}}
 </nav>
