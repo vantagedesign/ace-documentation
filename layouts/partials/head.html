@@ -7,7 +7,7 @@
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
     <link rel="canonical" href="{{ .Permalink }}">
-
+    <link rel="shortcut icon" href="https://dojo.tech/media/yb3fu2er/favicon.ico">
     <title>
         {{ block "title" . }}
         {{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
