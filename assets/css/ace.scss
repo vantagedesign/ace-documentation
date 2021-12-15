@@ -7,13 +7,15 @@
 * ------------------------------------------------------------------------ */
 
 $primary:       #00A699;
-$secondary:     #6610f2;
-$success:       #28a745;
+$secondary:     #7084FF;
+$success:       #26D07C;
 $info:          #17a2b8;
-$warning:       #ffc107;
-$danger:        #dc3545;
-$light:         #f8f9fa;
-$dark:          #343a40;
+$warning:       #ffb100;
+$danger:        #ff4655;
+$light:         #ffffff;
+$dark:          #262626;
+$lightgrey:     #f6f6f6;
+$grey:          #d8d8d8;
 
 @import "bootstrap/bootstrap";
 
@@ -33,7 +35,7 @@ $dark:          #343a40;
 }
 
 .haschildren ul{
-    color: gray;
+    color: #d8d8d8;
     display:none;
 }
 
@@ -99,7 +101,7 @@ $dark:          #343a40;
 
 .docs-toc a{
     font-size: 14px;
-    color: gray;
+    color: #d8d8d8;
 }
 
 .docs-toc a:hover{
