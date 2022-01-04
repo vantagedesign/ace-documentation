@@ -1,24 +1,39 @@
-<!-- Load required Javascript -->
-<script src="{{ .Site.BaseURL }}lib/jquery.min.js"></script> <!-- jQuery.js -->
-<script src="{{ .Site.BaseURL }}lib/popper.min.js"></script> <!-- Popper.js - dependency of Bootstrap -->
-
-<script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script> <!-- Other javascript -->
-
-<!-- Plugin: search -->
-<script type="text/javascript" src="{{"plugins/lunr.min.js" | relURL}}"></script>
-<script type="text/javascript" src="{{"plugins/auto-complete.js" | relURL}}"></script>
-<link href="{{"plugins/auto-complete.css" | relURL}}" rel="stylesheet">
-<script type="text/javascript">
-  {{ if .Site.IsMultiLingual }}
-      var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
-  {{ else }}
-      var baseurl = "{{.Site.BaseURL}}";
+{{ $links := .Site.Params.links }}
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        {{ with $links }}
+        {{ with index . "user"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        {{ with $links }}
+        {{ with index . "developer"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        {{ with .Site.Params.copyright }}<small class="text-white">&copy; {{ now.Year}} {{ .}} {{ T "footer_all_rights_reserved" }}</small>{{ end }}
+        {{ with .Site.Params.privacy_policy }}<small class="ml-1"><a href="{{ . }}" target="_blank" rel="noopener">{{ T "footer_privacy_policy" }}</a></small>{{ end }}
+	{{ if not .Site.Params.ui.footer_about_disable }}
+		{{ with .Site.GetPage "about" }}<p class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+	{{ end }}
+      </div>
+    </div>
+  </div>
+</footer>
+{{ define "footer-links-block" }}
+<ul class="list-inline mb-0">
+  {{ range . }}
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="{{ .name }}" aria-label="{{ .name }}">
+    <a class="text-white" target="_blank" rel="noopener" href="{{ .url }}" aria-label="{{ .name }}">
+      <i class="{{ .icon }}"></i>
+    </a>
+  </li>
   {{ end }}
-</script>
-<script type="text/javascript" src="{{"plugins/search.js" | relURL}}"></script>
-
-<!-- Plugin: clipboard -->
-<script type="text/javascript" src="{{"plugins/clipboard.js" | relURL}}"></script>
-<script>
-  new ClipboardJS('.btn');
-</script>
+</ul>
+{{ end }}
