@@ -39,7 +39,7 @@
         {{- if ne $numberOfPages 0 }} haschildren{{end}}
         ">
         <!-- I'm the params head -->
-        <a class="nav-link p-0" href="{{.RelPermalink}}"><h6>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</h6></a>
+        <a class="nav-link p-0" href="{{.RelPermalink}}"><h6>{{safeHTML .Params.Pre}}{{.LinkTitle}}{{safeHTML .Params.Post}}</h6></a>
       {{- if ne $numberOfPages 0 }}
         <ul class="list-unstyled ml-2">
           {{- .Scratch.Set "pages" .Pages }}
