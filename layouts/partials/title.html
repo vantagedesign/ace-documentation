@@ -1,0 +1,10 @@
+<div class="d-flex flex-column">
+    <h1 class="js-title">{{ .Title }}</h1>
+    <div class="d-flex align-items-center">
+        {{ if .Site.Params.enableFavorites }}
+            <button class="js-toggle-favorite-btn pl-0 btn btn-sm"><i class="mr-1 fas fa-star"></i><span class="js-toggle-favorite-text"></span></button>
+        {{ end }}
+    </div>
+</div>
+
+<hr>

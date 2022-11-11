@@ -9,6 +9,11 @@
                 <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
             </form>
         {{- end}}
+
+        {{ if .Site.Params.enableFavorites }}
+          {{ partial "favorites" }}
+        {{ end }}
+
          <ul class="navbar-nav flex-column pt-3">
              {{- $currentNode := . }}
              {{- $showvisitedlinks := .Site.Params.showVisitedLinks -}}
