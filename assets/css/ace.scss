@@ -15,6 +15,9 @@ $danger:        #dc3545;
 $light:         #f8f9fa;
 $dark:          #343a40;
 
+$docs_toc_padding_top: 10px;
+$docs_toc_position_top: 4rem;
+
 @import "bootstrap/bootstrap";
 
 /* Typography styling */
@@ -60,8 +63,8 @@ $dark:          #343a40;
 
 @media (min-width: 768px) {
     .docs-sidenav, .docs-toc{
-        height: calc(100vh - 4rem);
-        top:4rem;
+        height: calc(100vh - $docs_toc_position_top - $docs_toc_padding_top);
+        top: $docs_toc_position_top;
         position: sticky;
         overflow: auto;
     }
@@ -83,7 +86,7 @@ $dark:          #343a40;
 
 @media (min-width: 1200px) {
     .docs-toc.large{
-        height: calc(100vh - 4rem);
+        height: calc(100vh - $docs_toc_position_top - $docs_toc_padding_top);
     }
 }
 
@@ -94,7 +97,7 @@ $dark:          #343a40;
 }
 
 .docs-toc{
-    padding-top: 10px;
+    padding-top: $docs_toc_padding_top;
 }
 
 .docs-toc a{
