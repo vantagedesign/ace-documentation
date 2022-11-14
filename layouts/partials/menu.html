@@ -44,7 +44,19 @@
         {{- if ne $numberOfPages 0 }} haschildren{{end}}
         ">
         <!-- I'm the params head -->
-        <a class="nav-link p-0" href="{{.RelPermalink}}"><h6>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</h6></a>
+        {{ if .Site.Params.enableIcons }}
+          <a class="nav-link p-0 justify-content-start align-items-baseline" href="{{.RelPermalink}}">
+            {{ if isset .Params "icon" }}
+              <i class="nav-link__icon mr-1 {{ .Params.icon | safeHTML}}"></i>
+            {{ else }}
+              <i class="nav-link__icon mr-1 fa fa-arrow-right"></i>
+            {{ end }}
+            <h6>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</h6>
+          </a>
+        {{ else }}
+          <a class="nav-link p-0" href="{{.RelPermalink}}"><h6>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</h6></a>
+        {{ end }}
+
       {{- if ne $numberOfPages 0 }}
         <ul class="list-unstyled ml-2 {{- if .Site.Params.enableMenuExpanded }} d-block {{end -}}">
           {{- .Scratch.Set "pages" .Pages }}
@@ -75,9 +87,20 @@
     {{- if not .Params.Hidden }}
         <li data-nav-id="{{.RelPermalink}}" class="nav-item my-1 {{- if eq .RelPermalink $currentNode.RelPermalink}} active{{end -}}">
                 <!-- I'm the params hidden -->
-                 <a href="{{.RelPermalink}}" class="nav-link p-0">
+                {{ if .Site.Params.enableIcons }}
+                  <a href="{{.RelPermalink}}" class="nav-link p-0 justify-content-start align-items-baseline">
+                    {{ if isset .Params "icon" }}
+                      <i class="nav-link__icon mr-1 {{ .Params.icon | safeHTML}}"></i>
+                    {{ else }}
+                      <i class="nav-link__icon mr-1 fa fa-arrow-right"></i>
+                    {{ end }}
                     {{safeHTML .Params.Pre}}{{.LinkTitle}}{{safeHTML .Params.Post}}
-                </a>
+                  </a>
+                {{ else }}
+                  <a href="{{.RelPermalink}}" class="nav-link p-0">
+                    {{safeHTML .Params.Pre}}{{.LinkTitle}}{{safeHTML .Params.Post}}
+                  </a>
+                {{ end }}
         </li>
     {{- end}}
 {{- end}}
