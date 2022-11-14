@@ -41,7 +41,7 @@
         <!-- I'm the params head -->
         <a class="nav-link p-0" href="{{.RelPermalink}}"><h6>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</h6></a>
       {{- if ne $numberOfPages 0 }}
-        <ul class="list-unstyled ml-2">
+        <ul class="list-unstyled ml-2 {{- if .Site.Params.enableMenuExpanded }} d-block {{end -}}">
           {{- .Scratch.Set "pages" .Pages }}
           {{- if .Sections}}
           {{- .Scratch.Set "pages" (.Pages | union .Sections) }}
