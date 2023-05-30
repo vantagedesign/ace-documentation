@@ -35,8 +35,6 @@ The documentation for Ace was, of course, built with Ace. Therefore, the documen
 
 
 ## Resources
-
-- [Store page](https://vantage-design.com/products/documentation-themes/4/ace-documentation)
 - [Demo](https://docs.vantage-design.com/ace)
 - [Documentation](https://docs.vantage-design.com/ace)
 - [Issues](https://github.com/vantagedesign/ace-documentation/issues)
@@ -64,21 +62,13 @@ Please make pull requests to the [dev branch](https://github.com/vantagedesign/a
 
 ## Licensing
 
-- Copyright 2020 [Vantage Design](https://vantage-design.com)
+- Copyright 2020 [Vantage Design]
 - Licensed under MIT (https://github.com/vantagedesign/ace-documentation/blob/master/LICENSE.md)
 
-
-
-## Useful links
-
-- [More products](https://vantage-design.com)
-- [Free products](https://vantage-design.com/products/free-products/)
-- [Premium products](https://vantage-design.com/products/premium-products/)
-- [Design systems](https://vantage-design.com/products/design-systems/)
-- [Page templates](https://vantage-design.com/products/page-templates/)
-- [Documentation themes](https://vantage-design.com/products/documentation-themes/)
 
 ### Social Media
 
 - Facebook: <https://www.facebook.com/vantagedesignofficial>
 - Instagram: <https://www.instagram.com/vantagedesignofficial>
+
+This project is tested with BrowserStack.
