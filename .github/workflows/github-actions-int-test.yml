@@ -1,0 +1,13 @@
+name: Themes intigration test
+run-name: ${{ github.actor }} testing intigration with Hugo.
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - run: git checkout HEAD^
+      - run: scripts/install_hugo.sh
+      - run: echo "This job's status is ${{ job.status }}."
